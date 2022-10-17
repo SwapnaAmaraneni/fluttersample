@@ -93,4 +93,7 @@ void main() {
 
   myList.reduce((value, element) => element);
   print(myList);
+
+  final result = myList.map((e) => e + 5).toList();
+  print(result);
 }
