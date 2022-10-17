@@ -91,9 +91,13 @@ void main() {
   myList.sort();
   print(myList);
 
-  myList.reduce((value, element) => element);
-  print(myList);
-
-  final result = myList.map((e) => e + 5).toList();
+  final mymainList = [1, 3, 5, 4, 9, 11, 0, -4, -10];
+  final result = mymainList.reduce((sum, element) {
+    return sum + element;
+  });
   print(result);
+  print("reduced list is $result");
+
+  final result1 = myList.map((e) => e + 5).toList();
+  print(result1);
 }
